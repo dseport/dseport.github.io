@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<title>Forgotten Pollinators: Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" media="print" href="css/print.css">
+	<script src="js/includes.js"></script>
+	<script>
+		window.onload = includeHTML;
+	</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<div w3-include-html="fragment_header.html"></div> <!-- end of header div -->
+<div w3-include-html="fragment_nav.html"></div> <!-- end of nav div -->
+</header>
+
+<main>
+<h1>Welcome to Forgotten Pollinators</h1>
+<p>
+When you hear the word "pollinator" do you automatically think of bees? That is OK, bees are great! 
+But did you know other types of insects, birds, and even mammals can be pollinators too? 
+Explore our website and join our email list to learn more about the "forgotten pollinators" of the world.
+</p>
+
+<div class="media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fOMbAegJ1wQ?si=ijOaJyhse2H0miKc" 
+title="YouTube Video: What Are Pollinators" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div> <!-- end of media div -->
+</main>
+
+<aside>
+<h2>Email List</h2>
+<p>Subscribe to our newsletter to learn more and stay 
+up to date with the latest research news about your favorite pollinators.</p>
+
+<form id="mailing-list" method="post" action="../../resources/reflect.php">
+	<label for="name" class="ml-label">What is your name?</label>
+		<input id="name" type="text">
+<br>
+	<label for="email" class="ml-label">What is your email?</label>
+		<input id="email" type="email">
+<br>
+<fieldset>
+	<legend class="ml-label">What pollinators are you interested in?</legend>
+		<input id="bats" type="checkbox">
+			<label for="bats" class="ml-sublabel">Bats</label>
+		<input id="beetles" type="checkbox">
+			<label for="beetles" class="ml-sublabel">Beetles</label>
+		<input id="birds" type="checkbox">
+			<label for="birds" class="ml-sublabel">Birds</label>
+<br>
+		<input id="butterflies-moths" type="checkbox">
+			<label for="butterflies-moths" class="ml-sublabel">Butterflies and Moths</label>
+</fieldset>
+<br>
+<fieldset>
+	<legend class="ml-label">How often would you like to receive our emails?</legend>
+		<input id="monthly" type="radio">
+			<label for="monthly" class="ml-sublabel">Monthly</label>
+		<input id="quarterly" type="radio">
+			<label for="quarterly" class="ml-sublabel">Seasonally</label>
+</fieldset>
+<br>
+	<input id="ml-submit" type="submit" value="Submit">
+</form>
+</aside>
+
+<footer>
+<div w3-include-html="fragment_footer.html"></div> <!-- end of footer div -->
+</footer>
+
+</div> <!-- end of container div -->
+
+</body>
+</html>
